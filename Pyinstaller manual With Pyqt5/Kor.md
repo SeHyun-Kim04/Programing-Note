@@ -47,19 +47,18 @@ class WindowClass(QMainWindow, form_class):
 ## 2. 원하는 옵션을 이용해 spec 파일 생성
 
 <code>
-pyinstaller --onedir --onefile --noconsole --clean --hidden-import=PyQt5-sip -p [dll경로(dll path)]
+pyinstaller --onedir --onefile --noconsole --clean --hidden-import=PyQt5-sip -p [dll경로]
 </code></br>
 
 ### 중요!) 사용자가 원하는 대로 옵션을 붙여 사용하면 되지만, '[필수]'는 넣지 않으면 오류가 남.</br>
 
-> 한국어</br>
 > [필수] '--hidden-import=PyQt5-sip' : PyQt5-sip 모듈을 추가해줌.</br>
 > [선택] '--onedir' : 실행파일을 포함해 1개의 디렉토리(폴더)로 만듦</br>
 > [선택] '--onefiler' : 1개의 파일로 만든다.</br>
 > [선택] '--noconsole' : 콘솔(검은색 창)을 띄우지 않음.</br>
 > [권장] '--clean' : 빌드 전 모든 캐시, 임시파일 제거 </br>
-> [권장] '-p [dll경로(dll path)]' : Python이 없는 환경에서도 사용할 수 있도록 함.</br>
-> > [dll경로(dll path)]'에는</br>
+> [권장] '-p [dll경로]' : Python이 없는 환경에서도 사용할 수 있도록 함.</br>
+> > '[dll경로]'에는</br>
 > > <code>C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Remote Debugger\x64</code> 또는 <code>C:\Program Files (x86)\Windows Kits\10\Redist\ucrt\DLLs\x64</code></br>
 > > 둘중 한 경로에 있는 dll을 모두 복사해서 붙여넣는다.</br>
 
@@ -108,7 +107,7 @@ a = Analysis(['C:\\...'],
 
 ***
 
-## 4. 끝! (End!)
+## 4. 끝!
 
 ***
 
